@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.game{
+    width: 90%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 15px solid green ;
+    background: linear-gradient(rgb(9, 82, 239),rgba(255, 166, 0, 0.523));
+   
+}
+.castelo{
+    width: 35%;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.mario{
+    width: 14%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+   
+}
+.pulo{
+    animation: pulo-mario 500ms ease-out ;
+}
+.nuvem{
+    width: 40%;
+    right: -600px;
+    position: absolute;
+    z-index: 1;
+}
+.n{ animation: animaçao-nunvem 30s infinite linear;}
+.tubo{
+    width: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+   
+}
+.t{ animation: animaçao-tubo 1s  infinite linear;}
+
+.v{ animation: castelo-animacao 3s linear; }
+.sol{
+    border-radius: 100%;
+    background: linear-gradient(rgb(255, 130, 5),rgba(255, 166, 0, 0.171));
+    height: 150px;
+    width: 150px;
+    right: 95px;
+    bottom: 300px;
+    display: flex;
+    position: absolute;
+    
+}
+.ansol{ animation: sol 1s linear;}
+.anlua{ animation: lua 1s linear;}
+.lua{
+    border-radius: 100%;
+    background: linear-gradient(white,rgba(68, 70, 67, 0.171));
+    height: 150px;
+    width: 150px;
+    right: -1000px;
+    top: 15px;
+    position: relative;
+   display: none;
+}
+@keyframes lua {
+    from{top: -150px;}
+    to{top: 15px;}
+}
+@keyframes sol {
+    from{top: -15px;}
+    to{top: 100%;}
+}
+@keyframes animaçao-tubo{
+    from{
+        right: -70px;
+    }
+      to{
+        right: 100%;
+    }
+    
+}
+@keyframes castelo-animacao {
+    from{
+        right: -70px;
+    }
+      to{
+        right: 100%;
+    }
+}
+@keyframes pulo-mario{
+    0%{
+        bottom: 0;
+    }
+   
+    50%{
+        bottom: 180px;
+
+    }
+   
+    100%{
+        bottom: 0px;
+    }
+}
+@keyframes animaçao-nunvem {
+    from{
+        right: -600px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+.inicio,button{
+    margin:0 auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 20%;
+   
+}
+p{
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+#inicio,#up{
+  
+    background:#87ceeb; 
+    margin-top: 20px;
+}

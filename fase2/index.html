@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fase 2</title>
+    <link rel="stylesheet" href="m2.css">
+    <script src="mario2.js" defer></script>
+</head>
+<body>
+    <div class="game">
+       <img src="/fotos/mario.gif" class="mario">
+       <img src="/fotos/clouds.png" class="nuvem">
+       <img src="/fotos/pipe.png" class="tubo">
+       <img src="/fotos/castelo.png" class="castelo" style="display: none;">
+       <div class="sol"></div><div class="lua"></div>
+    </div>
+    <audio src="/musicas/mario.mp4" id="musica"></audio>
+    <audio src="/musicas/gameover.mp4" id="gameover"></audio>
+    <audio src="/musicas/vitoria.mp4" id="vitoria"></audio>
+    <audio src="/musicas/musica2.mpeg" id="musica2"></audio>
+    <div  class="inicio">
+        <button onclick="começa()" id="inicio" class="inicio">começa</button>
+        <button id="up" style="display: none;">up</button>
+    </div>
+    <div>
+        <p id="contar">0</p>
+    </div>
+
+</body>
+</html>
