@@ -22,6 +22,7 @@ function jump() {
     nuvem.classList.add('n');
     audio.play();
     inicio.style.display = 'none';
+    setInterval( loop, 10);
 }
 function loop(){   
   const pipePosition = pipe.offsetLeft;
@@ -37,15 +38,15 @@ function loop(){
         mario.style.bottom = `${marioPosition}px`;
         nuvem.style.animation = 'none';
         nuvem.style.left = `${nuvemPosition}px`;
-        mario.src = '/fotos/game-over.png';
-        mario.style.width = '80px';
+        mario.src = '../img/game-over.png';
+        mario.style.width = '100px';
         mario.style.marginLeft = '50px';
         audio.pause(); 
         gameover.play();
     }
 }
 
-setInterval( loop, 10);
+
 
 document.addEventListener('keydown', function(event){
     if(event.keyCode === 88){

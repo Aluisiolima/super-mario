@@ -37,7 +37,7 @@ function sistemaDeDerrotar(){
         tubo.style.left = `${tuboPosiçao}px`;
         mario.style.animation = 'none';
         mario.style.left = `${marioPosiçao}px`;
-        mario.src = '/fotos/game-over.png';
+        mario.src = '../img/game-over.png';
         mario.style.width = '80px';
         mario.style.marginLeft = '50px'
         nuvem.style.animation = 'none';

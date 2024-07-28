@@ -5,16 +5,20 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel='stylesheet' type='text/css' media='screen' href='m.css'>
    
 </head>
 <body>
+<div class="container">
     <div class="game">
-        <img src="../fotos/mario.gif" class=" mario ">
-        <img src="../fotos/pipe.png"  class="tubo">
-        <img src="../fotos/clouds.png" class="nuvem">
-        <img src="../fotos/castelo.png" class="castelo">
-       
+        <div>
+            <p id="contar">0</p>
+        </div>
+        <img src="../img/mario.gif" class=" mario ">
+        <img src="../img/pipe.png"  class="tubo">
+        <img src="../img/clouds.png" class="nuvem">
+        <img src="../img/castelo.png" class="castelo">
     </div>
     <audio src="../musicas/mario.mp4" id="musica" ></audio>
     <audio src="../musicas/gameover.mp4" id="gameover"></audio>
@@ -25,9 +29,8 @@
     <div>
       <button onclick="lick()" style="display:none"  id="up">up</button> 
     </div>
-    <div>
-        <p id="contar">0</p>
-    </div>
+    
+</div>
 </body>
 <script src='./mario.js' defer></script>
 <script>
